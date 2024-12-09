@@ -52,12 +52,7 @@ function factorial(n) {
  * @param {*} n
  */
 function isBinary(n) {
-    if (!n) return false;
-    while(n > 1) {
-        if(n & 1) return false;
-        n >>= 1;
-    }
-    return true;
+    return n > 0 && (n & (n - 1)) === 0;
 }
 
 /**
@@ -142,7 +137,8 @@ function deepEqual(firstObject, secondObject) {
     if (firstObject === secondObject) {
         return true;
     } 
-    if (typeof(firstObject) !== "object" || typeof(secondObject) !== "object") {
+    if (typeof(firstObject) !== "object" || firstObject === null ||
+        typeof(secondObject) !== "object" || secondObject === null) {
         return false;
     }
 
