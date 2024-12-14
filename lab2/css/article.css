@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    position: fixed;
+    width: 25vw;
+    height: 100vh;
+    background-color: #AFCDE7;
+}
+
+.icon {
+    width: 23vw;
+    height: 23vw;
+    padding: 1vw;
+    background-color: rgb(229, 255, 176);
+}
+
+.icon > img {
+    width: inherit;
+    height: inherit;
+}
+
+.sidebar > a:has(+.icon) {
+    font-size: 24px;
+    display: block;
+    background-color: rgb(210, 242, 146);
+}
+
+.sidebar > p {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.area {
+    position: relative;
+    left: 25vw;
+    width: 75vw;
+    height: 100vh;
+}
+
+.area > .tile {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
