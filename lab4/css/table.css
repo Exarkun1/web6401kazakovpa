@@ -1,0 +1,26 @@
+table {
+    font-size: 18px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+th {
+    background: #AFCDE7;
+    color: white;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    padding: 10px 20px;
+}
+
+td {
+    background: #D8E6F3;
+}
+
+th:first-child {
+    text-align: left;
+}

@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    grid-template-columns: 22vw 1fr;
+    grid-template-rows: 100vh;
+}
+
+.sidebar {
+    background-color: #AFCDE7;
+    display: grid;
+    grid-template-rows: 30px 20vw 1fr;
+    row-gap: 5px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.icon {
+    width: 18vw;
+    height: 18vw;
+    padding: 1vw;
+    border-radius: 10px;
+    background-color: rgb(229, 255, 176);
+}
+
+.icon > img {
+    width: inherit;
+    height: inherit;
+}
+
+.sidebar > a:has(+.icon) {
+    font-size: 24px;
+}
+
+.sidebar > .strs > p {
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.area > .tile {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
