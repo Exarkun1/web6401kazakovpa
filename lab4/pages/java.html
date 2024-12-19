@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Java</title>
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/article.css">
+        <link rel="stylesheet" href="../css/tile.css">
+        <link rel="stylesheet" href="../css/code.css">
+        <link rel="stylesheet" href="../css/form.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <a href="main.html">Назад</a>
+            <div class="icon">
+                <img src="../images/java.png" alt="Java">
+            </div>
+            <div class="strs">
+                <p>Язык: Java</p>
+                <p>Компания: Oracle / Sun</p>
+                <p>Год создания: 1995</p>
+            </div>
+        </div>
+        <div class="area">
+            <div class="tile">
+                <p class="tile_name">Описание</p>
+                <p class="paragraph">
+                    Java — строго типизированный объектно-ориентированный язык программирования общего назначения, 
+                    разработанный компанией Sun Microsystems (в последующем приобретённой компанией Oracle). 
+                    Разработка ведётся сообществом, организованным через Java Community Process; 
+                    язык и основные реализующие его технологии распространяются по лицензии GPL.
+                </p>
+                <p class="paragraph">
+                    Приложения Java обычно транслируются в специальный байт-код, 
+                    поэтому они могут работать на любой компьютерной архитектуре, 
+                    для которой существует реализация виртуальной Java-машины. 
+                    Дата официального выпуска — 23 мая 1995 года.
+                </p>
+            </div>
+            <div class="tile">
+                <p class="tile_name">Пример кода</p>
+                <p class="paragraph">Вывод "Hello, World!"</p>
+    <code>
+        <span class="key">public</span> <span class="key">class</span> <span class="word">Main</span> {
+            <span class="key">public</span> <span class="key">static</span> <span class="key">void</span> <span class="word">main</span>(<span class="word">String</span>[] <span class="word">args</span>){
+                <span class="word">System</span>.<span class="word">out</span>.<span class="word">println</span>(<span class="str">"Hello, World!"</span>);
+            }
+        }
+    </code>
+            </div>
+            <div class="tile">
+                <p class="tile_name">Сообщение для Java</p>
+                <form class="sub_form" method="post">
+                    <textarea placeholder="Введите ваше пожелание для этого языка..."></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <script src="../js/events.js"></script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+.tile {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(229, 255, 176);
+    transition: 0.25s;
+}
+
+.tile > img {
+    width: 200px;
+    height: 200px;
+}
+
+.tile > p.tile_name {
+    font-size: 48px;
+    text-align: center;
+    color: rgb(93, 93, 254);
+}
+
+.tile > p.paragraph {
+    font-size: 18px;
+    text-indent: 20px;
+}
+
+.tile.zoom:hover {
+    transform: scale(1.05);
+}
+
+a > .tile:active {
+    background-color: rgb(213, 250, 138);
+}
+
+a:has(>.tile) {
+    text-decoration: none;
+}

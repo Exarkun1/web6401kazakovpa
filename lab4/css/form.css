@@ -1,0 +1,11 @@
+.sub_form > textarea {
+    width: 100%;
+    height: 15vh;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.sub_form > .error {
+    font-size: 18px;
+    color: red;
+}
